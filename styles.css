@@ -261,3 +261,11 @@ footer {
     margin-left: auto;
   }
 }
+
+.card {
+  cursor: pointer;
+}
+
+.card a {
+  margin-top: 15px;
+}
