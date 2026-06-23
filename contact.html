@@ -76,53 +76,47 @@
       <div class="card">
   <h2>Request a Free Quote</h2>
 
-  <form
-   action="https://formspree.io/f/xpqgwrwq"
-  method="POST"
->
+  <form id="quoteForm">
 
-<input
-  type="hidden"
-  name="_next"
-  value="https://planetshine.com.au/thank-you.html"
->
 
   <p>
     <input
-      type="text"
-      name="name"
-      placeholder="Your Name"
-      style="width:100%;padding:14px;margin-bottom:15px;"
-      required
-    >
+  type="text"
+  id="name"
+  name="name"
+  placeholder="Your Name"
+  style="width:100%;padding:14px;margin-bottom:15px;"
+  required
+>
   </p>
 
   <p>
-    <input
-      type="email"
-      name="email"
-      placeholder="Email Address"
-      style="width:100%;padding:14px;margin-bottom:15px;"
-      required
-    >
+   <input
+  type="email"
+  id="email"
+  name="email"
+  placeholder="Email Address"
+  style="width:100%;padding:14px;margin-bottom:15px;"
+  required
+>
   </p>
 
   <p>
-    <input
-      type="tel"
-      name="phone"
-      placeholder="Phone Number"
-      style="width:100%;padding:14px;margin-bottom:15px;"
-    >
+  <input
+  type="tel"
+  id="phone"
+  name="phone"
+  placeholder="Phone Number"
+>
   </p>
 
   <p>
     <textarea
-      name="message"
-      placeholder="Tell us about your cleaning requirements..."
-      style="width:100%;padding:14px;height:150px;"
-      required
-    ></textarea>
+  id="message"
+  name="message"
+  placeholder="Tell us about your cleaning requirements..."
+  required
+></textarea>
   </p>
 
   <button
@@ -137,5 +131,39 @@
     <footer>
   © 2026 PlanetShine Cleaning | planetshine.com.au
 </footer>
-  </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("M3Avzq5PAv77C8yJ2");
+
+  document.getElementById("quoteForm")
+    .addEventListener("submit", function (e) {
+
+      e.preventDefault();
+
+      emailjs.send(
+        "service_g7whd6h",
+        "template_80df5sg",
+        {
+          from_name: document.getElementById("name").value,
+          from_email: document.getElementById("email").value,
+          phone: document.getElementById("phone").value,
+          message: document.getElementById("message").value
+        }
+      )
+      .then(function () {
+        window.location.href = "thank-you.html";
+      })
+      .catch(function (error) {
+        console.error(error);
+        alert(
+          "Sorry, something went wrong. Please call us on +61 451 311 905."
+        );
+      });
+
+    });
+</script>
+
+</body>
 </html>
