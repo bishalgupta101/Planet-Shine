@@ -122,9 +122,10 @@
 </p>
 
   <button
-    type="submit"
-    class="btn btn-primary">
-    Request Quote
+     type="submit"
+  id="submitBtn"
+  class="btn btn-primary">
+  Request Quote
   </button>
 
 </form>
@@ -143,7 +144,11 @@
     .addEventListener("submit", function (e) {
 
       e.preventDefault();
+const button = document.getElementById("submitBtn");
 
+button.disabled = true;
+button.innerText = "Sending...";
+      
       emailjs.send(
         "service_g7whd6h",
         "template_80df5sg",
@@ -158,6 +163,10 @@
         window.location.href = "thank-you.html";
       })
       .catch(function (error) {
+        
+        button.disabled = false;
+button.innerText = "Request Quote";
+        
         console.error(error);
         alert(
           "Sorry, something went wrong. Please call us on +61 451 311 905."
