@@ -102,13 +102,14 @@
   </p>
 
   <p>
-  <input
-  type="tel"
-  id="phone"
-  name="phone"
-  placeholder="Phone Number"
->
-  </p>
+  <textarea
+    id="message"
+    name="message"
+    placeholder="Tell us about your cleaning requirements..."
+    style="width:100%;padding:14px;height:150px;"
+    required
+  ></textarea>
+</p>
 
   <p>
     <textarea
@@ -135,7 +136,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
 <script>
-  emailjs.init("M3Avzq5PAv77C8yJ2");
+  emailjs.init("M3Avzq5PAv77C8yJO");
 
   document.getElementById("quoteForm")
     .addEventListener("submit", function (e) {
