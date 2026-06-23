@@ -62,8 +62,18 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   color: white;
-  background: radial-gradient(circle at top, var(--green), var(--blue));
   padding: 20px;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("images/hero-regional.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero h2 {
