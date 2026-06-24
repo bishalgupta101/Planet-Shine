@@ -1,371 +1,326 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Professional Cleaning Services Across Regional Australia | PlanetShine</title>
+    <title>Professional Cleaning Services | PlanetShine Regional Australia</title>
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO Meta Tags -->
-    <meta
-      name="description"
-      content="PlanetShine provides professional residential, commercial and specialised cleaning services across regional Australia. Based in the Hunter Region, we proudly support homes and businesses throughout regional communities nationwide. Get your free quote today."
-    />
-
-    <meta
-      name="keywords"
-      content="Cleaning Services Newcastle,Commercial Cleaning Hunter Region,Commercial Cleaning Newcastle,Residential Cleaning Newcastle,Cleaning Services Maitland,Cleaning Services Singleton,Cleaning Services Muswellbrook,Cleaning Services Aberdeen,Cleaning Services Scone,Cleaning Services Merriwa,Cleaning Services Murrurundi,Cleaning Services Tamworth,Office Cleaning Hunter Region,End of Lease Cleaning Hunter Region,House Cleaning Newcastle,Window Cleaning Hunter Region,Carpet Cleaning Hunter Region,Planet Shine cleaning"
-    />
-
+    <meta name="description" content="PlanetShine provides professional residential, commercial and specialised cleaning services across regional Australia. Based in the Hunter Region, NSW. Get your free quote today." />
+    <meta name="keywords" content="Cleaning Services Newcastle, Commercial Cleaning Hunter Region, Residential Cleaning Maitland, Cleaning Services Singleton, Cleaning Services Muswellbrook, End of Lease Cleaning Hunter Region" />
     <meta name="author" content="PlanetShine Cleaning Services" />
     <meta name="robots" content="index, follow" />
-
-    <!-- Open Graph (for Facebook/WhatsApp sharing) -->
-    <meta
-      property="og:title"
-      content="PlanetShine Cleaning Services | Regional Australia"
-    />
-    <meta
-      property="og:description"
-      content="Residential and commercial cleaning services across Newcastle, Maitland, Singleton, Muswellbrook, Aberdeen, Scone, Merriwa, Murrurundi and Tamworth. Reliable, insured and eco-friendly cleaning for homes and businesses."
-    />
+    <meta property="og:title" content="PlanetShine Cleaning Services | Regional Australia" />
+    <meta property="og:description" content="Residential and commercial cleaning services across Newcastle, Maitland, Singleton, Muswellbrook, Aberdeen, Scone, Merriwa, Murrurundi and Tamworth." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://planetshine.com.au" />
-    <meta property="og:image" content="https://planetshine.com.au/favicon.png" />
-
-    <!-- Canonical URL -->
+    <meta property="og:image" content="https://planetshine.com.au/images/hero-regional.png" />
     <link rel="canonical" href="https://planetshine.com.au" />
   </head>
   <body>
-    <header>
-      <h1>PlanetShine Cleaning Services | Regional Australia</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
+ 
+    <!-- ── NAV ── -->
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">✦</span>
+          PlanetShine
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn btn-nav">Get a free quote</a>
+        <button class="hamburger" aria-label="Open menu">&#9776;</button>
+      </div>
     </header>
-
+ 
+    <!-- ── HERO ── -->
     <section class="hero">
-      <div>
-        <h2>Professional Residential & Commercial Cleaning Services Across Regional Australia</h2>
-        <p>
-          PlanetShine delivers reliable residential, commercial and specialised cleaning services across regional Australia. While our operations are currently focused throughout the Hunter Region and surrounding NSW communities, our network of trained professionals allows us to support homes and businesses across regional towns nationwide.
-        </p>
-
-        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
-        <a href="services.html" class="btn btn-outline">Explore Services</a>
+      <div class="hero-img-wrap">
+        <img src="images/hero-regional.png" alt="Hunter Region landscape at sunset" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hunter Region &amp; Regional Australia</p>
+        <h1 class="hero-heading">Where clean meets<br><em>community</em></h1>
+        <p class="hero-sub">Professional residential, commercial and specialised cleaning services — delivered with local care and exceptional attention to detail.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Get a free quote</a>
+          <a href="services.html" class="btn btn-ghost">Explore services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Years experience</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Availability</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">9+</span><span class="stat-label">Service areas</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Insured</span></div>
+        </div>
       </div>
     </section>
-
-    <section class="container">
-  <h2 class="section-title">Our Services</h2>
-
-  <div class="grid">
-
-    <div class="card">
-  <img src="images/commercial-cleaning.png" alt="Commercial Cleaning">
-  <h3>Commercial Cleaning</h3>
-  <p>
-    Professional cleaning solutions for offices, businesses and workplaces.
-  </p>
-  <a href="services/commercial-cleaning.html" class="btn btn-primary">
-    Learn More
-  </a>
-</div>
-
-    <div class="card">
-      <img src="images/residential-cleaning.png" alt="Residential Cleaning">
-      <h3>Residential Cleaning</h3>
-      <p>
-        Reliable home cleaning services tailored to your lifestyle and schedule.
-      </p>
-      <a href="services/residential-cleaning.html" class="btn btn-primary">
-  Learn More
-</a>
-    </div>
-
-    <div class="card">
-      <img src="images/end-of-lease-cleaning.png" alt="End of Lease Cleaning">
-      <h3>End of Lease Cleaning</h3>
-      <p>
-        Detailed bond cleaning to help tenants leave properties spotless.
-      </p>
-      <a href="services/end-of-lease-cleaning.html" class="btn btn-primary">
-  Learn More
-</a>
-    </div>
-
-    <div class="card">
-  <img src="images/office-cleaning.png" alt="Office Cleaning">
-  <h3>Office Cleaning</h3>
-  <p>
-    Professional cleaning services for offices and workplaces.
-  </p>
-  <a href="services/office-cleaning.html" class="btn btn-primary">
-    Learn More
-  </a>
-</div>
-
-<div class="card">
-  <img src="images/window-cleaning.png" alt="Window Cleaning">
-  <h3>Window Cleaning</h3>
-  <p>
-    Crystal clear windows for homes and businesses.
-  </p>
-  <a href="services/window-cleaning.html" class="btn btn-primary">
-    Learn More
-  </a>
-</div>
-
-<div class="card">
-  <img src="images/deep-cleaning.png" alt="Deep Cleaning">
-  <h3>Deep Cleaning</h3>
-  <p>
-    Detailed top-to-bottom cleaning for homes and commercial spaces.
-  </p>
-  <a href="services/deep-cleaning.html" class="btn btn-primary">
-    Learn More
-  </a>
-</div>
-    
-  </div>
-</section>
-    
-    <section class="container">
-
-<h2 class="section-title">
-Trusted Cleaning Professionals Across Regional Australia
-</h2>
-
-<div class="card">
-
-<p>
-PlanetShine is a locally operated cleaning company proudly based in the Hunter Region of New South Wales. Backed by more than 5 years of industry experience, we provide reliable residential, commercial and specialised cleaning services for homes, offices, retail premises, schools, hospitality venues, strata properties and industrial facilities.
-</p>
-
-<p>
-Our commitment is simple — deliver professional cleaning services with exceptional attention to detail, transparent communication and outstanding customer service. Whether you require a one-off deep clean, regular maintenance cleaning, end-of-lease cleaning or a large commercial cleaning contract, our team works to the highest standards to ensure every property is presented at its best.
-</p>
-
-<p>
-From Scone, Aberdeen, Muswellbrook, Singleton, Maitland and Newcastle through to regional communities across Australia, PlanetShine continues to build trusted relationships with homeowners, businesses and property managers seeking dependable cleaning solutions.
-</p>
-
-</div>
-
-</section>
-
-<section class="section-dark">
-
-<div class="container">
-
-<h2 class="section-title">
-Why Choose PlanetShine?
-</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>24/7 Availability</h3>
-<p>
-Flexible scheduling options for urgent, after-hours and routine cleaning requirements.
-</p>
-</div>
-
-<div class="card">
-<h3>Free Site Inspections & Quotes</h3>
-<p>
-We provide obligation-free inspections and transparent pricing before work begins.
-</p>
-</div>
-
-<div class="card">
-<h3>Fully Insured</h3>
-<p>
-Comprehensive insurance coverage provides peace of mind for every project.
-</p>
-</div>
-
-<div class="card">
-<h3>Eco-Friendly Products</h3>
-<p>
-Safe cleaning products that protect occupants while delivering exceptional results.
-</p>
-</div>
-
-<div class="card">
-<h3>Competitive Pricing</h3>
-<p>
-Affordable cleaning solutions tailored to your requirements and budget.
-</p>
-</div>
-
-<div class="card">
-<h3>Commercial & Residential Specialists</h3>
-<p>
-Experienced in servicing homes, offices, retail spaces and commercial facilities.
-</p>
-</div>
-
-<div class="card">
-<h3>Local Hunter Region Business</h3>
-<p>
-Proudly based in Scone and servicing communities throughout regional Australia.
-</p>
-</div>
-
-<div class="card">
-<h3>Fast Response Times</h3>
-<p>
-We respond quickly to enquiries and provide quotes within 24 hours whenever possible.
-</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="stats-bar">
-
-<div class="stat-item">
-<h3>5+</h3>
-<p>Years Experience</p>
-</div>
-
-<div class="stat-item">
-<h3>100%</h3>
-<p>Customer Focused</p>
-</div>
-
-<div class="stat-item">
-<h3>Hunter Region</h3>
-<p>Locally Owned</p>
-</div>
-
-<div class="stat-item">
-<h3>Regional Australia</h3>
-<p>Growing Coverage</p>
-</div>
-
-</section>
-
-<section class="container">
-
-<h2 class="section-title">
-Our Team
-</h2>
-
-<div class="card">
-
-<p>
-PlanetShine is an owner-operated cleaning business supported by a growing network of trained cleaning professionals and contractors. This flexible structure allows us to efficiently service residential, commercial and specialised cleaning projects throughout the Hunter Region and regional Australia.
-</p>
-
-<p>
-Every member of our team is committed to delivering professional workmanship, reliable communication and consistent cleaning standards. We focus on building long-term relationships through trust, quality service and customer satisfaction.
-</p>
-
-<p>
-Whether cleaning a family home, office building, retail store or commercial facility, our goal remains the same — deliver exceptional cleaning results every time.
-</p>
-
-</div>
-
-</section>
-    
-<section class="container">
-  <h2 class="section-title">Service Areas</h2>
-
-  <p style="text-align:center; max-width:900px; margin:auto;">
-  PlanetShine proudly provides residential, commercial and specialised cleaning services across regional communities throughout Australia. While our operations are currently focused throughout the Hunter Region and surrounding NSW towns, our growing network allows us to support homes and businesses across regional Australia.
-</p>
-
-  <div class="grid">
-    <div class="card"><h3>Newcastle</h3></div>
-    <div class="card"><h3>Maitland</h3></div>
-    <div class="card"><h3>Singleton</h3></div>
-    <div class="card"><h3>Muswellbrook</h3></div>
-    <div class="card"><h3>Aberdeen</h3></div>
-    <div class="card"><h3>Scone</h3></div>
-    <div class="card"><h3>Merriwa</h3></div>
-    <div class="card"><h3>Murrurundi</h3></div>
-    <div class="card"><h3>Tamworth</h3></div>
-  </div>
-</section>
-
-<section class="container">
-  <div class="card" style="text-align:center;">
-    <h2>Ready to Transform Your Space?</h2>
-
-    <p>
-      Whether you need commercial, residential or specialised cleaning services,
-      PlanetShine is here to help. Contact us today for a free quote.
-    </p>
-
-    <a href="contact.html" class="btn btn-primary">
-      Get a Free Quote
-    </a>
-  </div>
-</section>
-    
-   <footer class="footer">
-
-<div class="footer-grid">
-
-<div>
-<h3>PlanetShine</h3>
-
-<p>
-Professional cleaning services throughout the Hunter Region and Regional Australia.
-Residential, commercial and specialised cleaning solutions delivered with quality and reliability.
-</p>
-</div>
-
-<div>
-<h3>Services</h3>
-
-<ul>
-<li>Commercial Cleaning</li>
-<li>Office Cleaning</li>
-<li>Residential Cleaning</li>
-<li>End Of Lease Cleaning</li>
-<li>Window Cleaning</li>
-</ul>
-</div>
-
-<div>
-<h3>Service Areas</h3>
-
-<ul>
-<li>Newcastle</li>
-<li>Maitland</li>
-<li>Singleton</li>
-<li>Muswellbrook</li>
-<li>Scone</li>
-<li>Tamworth</li>
-</ul>
-</div>
-
-<div>
-<h3>Contact</h3>
-
-<p>
-📞 +61 451 311 905
-</p>
-
-<p>
-✉ info@planetshine.com.au
-</p>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-© 2026 PlanetShine Cleaning Services
-</div>
-
-</footer>
+ 
+    <!-- ── INTRO ── -->
+    <section class="intro section">
+      <div class="container intro-grid">
+        <div class="intro-text">
+          <p class="eyebrow">Who we are</p>
+          <h2>Locally owned, regionally trusted</h2>
+          <p>PlanetShine is an owner-operated cleaning business proudly based in Scone, NSW. With more than 5 years of experience, we serve homes, offices, retail premises, schools, hospitality venues, strata properties and industrial facilities across the Hunter Region and beyond.</p>
+          <p>Our commitment is simple — professional cleaning with exceptional attention to detail, transparent communication and outstanding customer service. Every time.</p>
+          <a href="about.html" class="btn btn-outline">About us</a>
+        </div>
+        <div class="intro-badges">
+          <div class="badge-card">
+            <span class="badge-icon">🛡️</span>
+            <strong>Fully insured</strong>
+            <p>Comprehensive coverage on every job</p>
+          </div>
+          <div class="badge-card">
+            <span class="badge-icon">🌿</span>
+            <strong>Eco-friendly</strong>
+            <p>Safe products for people &amp; planet</p>
+          </div>
+          <div class="badge-card">
+            <span class="badge-icon">⚡</span>
+            <strong>Fast response</strong>
+            <p>Quotes within 24 hours</p>
+          </div>
+          <div class="badge-card">
+            <span class="badge-icon">📋</span>
+            <strong>Free inspections</strong>
+            <p>No obligation, transparent pricing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ── SERVICES ── -->
+    <section class="services section section-tinted">
+      <div class="container">
+        <p class="eyebrow text-center">What we offer</p>
+        <h2 class="text-center">Our services</h2>
+        <div class="services-grid">
+ 
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/commercial-cleaning.png" alt="Commercial Cleaning" />
+            </div>
+            <div class="service-body">
+              <h3>Commercial cleaning</h3>
+              <p>Professional solutions for offices, businesses and workplaces of all sizes.</p>
+              <a href="services/commercial-cleaning.html" class="link-arrow">Learn more →</a>
+            </div>
+          </div>
+ 
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/residential-cleaning.png" alt="Residential Cleaning" />
+            </div>
+            <div class="service-body">
+              <h3>Residential cleaning</h3>
+              <p>Reliable home cleaning tailored to your lifestyle and schedule.</p>
+              <a href="services/residential-cleaning.html" class="link-arrow">Learn more →</a>
+            </div>
+          </div>
+ 
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/end-of-lease-cleaning.png" alt="End of Lease Cleaning" />
+            </div>
+            <div class="service-body">
+              <h3>End of lease cleaning</h3>
+              <p>Detailed bond cleaning to help tenants leave properties spotless.</p>
+              <a href="services/end-of-lease-cleaning.html" class="link-arrow">Learn more →</a>
+            </div>
+          </div>
+ 
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/office-cleaning.png" alt="Office Cleaning" />
+            </div>
+            <div class="service-body">
+              <h3>Office cleaning</h3>
+              <p>Scheduled cleaning programs for productive, hygienic workspaces.</p>
+              <a href="services/office-cleaning.html" class="link-arrow">Learn more →</a>
+            </div>
+          </div>
+ 
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/window-cleaning.png" alt="Window Cleaning" />
+            </div>
+            <div class="service-body">
+              <h3>Window cleaning</h3>
+              <p>Crystal clear windows for homes and commercial buildings.</p>
+              <a href="services/window-cleaning.html" class="link-arrow">Learn more →</a>
+            </div>
+          </div>
+ 
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img src="images/deep-cleaning.png" alt="Deep Cleaning" />
+            </div>
+            <div class="service-body">
+              <h3>Deep cleaning</h3>
+              <p>Top-to-bottom intensive cleaning for homes and commercial spaces.</p>
+              <a href="services/deep-cleaning.html" class="link-arrow">Learn more →</a>
+            </div>
+          </div>
+ 
+        </div>
+        <div class="text-center" style="margin-top:2.5rem">
+          <a href="services.html" class="btn btn-outline">View all services</a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ── WHY US ── -->
+    <section class="why section">
+      <div class="container">
+        <p class="eyebrow text-center">Why PlanetShine</p>
+        <h2 class="text-center">What sets us apart</h2>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-icon">🕐</div>
+            <h3>24/7 availability</h3>
+            <p>Flexible scheduling for urgent, after-hours and routine cleaning requirements.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">📋</div>
+            <h3>Free site inspections</h3>
+            <p>Obligation-free inspections and transparent pricing before work begins.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">🛡️</div>
+            <h3>Fully insured</h3>
+            <p>Comprehensive insurance coverage provides peace of mind for every project.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">🌿</div>
+            <h3>Eco-friendly products</h3>
+            <p>Safe cleaning products that protect occupants while delivering exceptional results.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">💰</div>
+            <h3>Competitive pricing</h3>
+            <p>Affordable cleaning solutions tailored to your requirements and budget.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">⚡</div>
+            <h3>Fast response times</h3>
+            <p>We respond quickly and provide quotes within 24 hours wherever possible.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">📍</div>
+            <h3>Local Hunter Region business</h3>
+            <p>Proudly based in Scone and servicing communities across regional Australia.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">⭐</div>
+            <h3>Quality guaranteed</h3>
+            <p>Consistent, high standards on every residential and commercial project.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ── AREAS ── -->
+    <section class="areas section section-tinted">
+      <div class="container">
+        <p class="eyebrow text-center">Where we work</p>
+        <h2 class="text-center">Service areas</h2>
+        <p class="areas-sub">PlanetShine proudly services residential, commercial and specialised cleaning across the Hunter Region and surrounding NSW communities. Our growing network allows us to support homes and businesses across regional Australia.</p>
+        <div class="areas-grid">
+          <div class="area-card"><h3>Newcastle</h3></div>
+          <div class="area-card"><h3>Maitland</h3></div>
+          <div class="area-card"><h3>Singleton</h3></div>
+          <div class="area-card"><h3>Muswellbrook</h3></div>
+          <div class="area-card"><h3>Aberdeen</h3></div>
+          <div class="area-card"><h3>Scone</h3></div>
+          <div class="area-card"><h3>Merriwa</h3></div>
+          <div class="area-card"><h3>Murrurundi</h3></div>
+          <div class="area-card"><h3>Tamworth</h3></div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ── CTA ── -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to transform your space?</h2>
+          <p>Whether you need commercial, residential or specialised cleaning services, PlanetShine is here to help. Contact us today for a free, no-obligation quote.</p>
+          <a href="contact.html" class="btn btn-primary">Get a free quote</a>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col footer-brand">
+          <div class="logo footer-logo">
+            <span class="logo-mark">✦</span> PlanetShine
+          </div>
+          <p>Professional cleaning services throughout the Hunter Region and regional Australia. Residential, commercial and specialised cleaning solutions delivered with quality and reliability.</p>
+          <p class="footer-contact">
+            📞 <a href="tel:+61451311905">+61 451 311 905</a><br />
+            ✉ <a href="mailto:info@planetshine.com.au">info@planetshine.com.au</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services/commercial-cleaning.html">Commercial cleaning</a></li>
+            <li><a href="services/office-cleaning.html">Office cleaning</a></li>
+            <li><a href="services/residential-cleaning.html">Residential cleaning</a></li>
+            <li><a href="services/end-of-lease-cleaning.html">End of lease cleaning</a></li>
+            <li><a href="services/window-cleaning.html">Window cleaning</a></li>
+            <li><a href="services/deep-cleaning.html">Deep cleaning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Service areas</h4>
+          <ul>
+            <li>Newcastle</li>
+            <li>Maitland</li>
+            <li>Singleton</li>
+            <li>Muswellbrook</li>
+            <li>Scone</li>
+            <li>Tamworth</li>
+            <li>Aberdeen</li>
+            <li>Merriwa</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          © 2026 PlanetShine Cleaning Services. All rights reserved.
+        </div>
+      </div>
+    </footer>
+ 
+    <script>
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+      hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    </script>
+ 
+  </body>
+</html>
