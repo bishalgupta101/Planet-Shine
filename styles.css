@@ -295,3 +295,27 @@ color:white;
 margin-top:10px;
 color:rgba(255,255,255,.9);
 }
+
+.section-dark {
+  background: linear-gradient(135deg,#0f6b50,#1b8f6a);
+  color: white;
+  padding: 90px 0;
+}
+
+.section-dark .section-title {
+  color: white;
+}
+
+.section-dark .card {
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.section-dark .card h3 {
+  color: white;
+}
+
+.section-dark .card p {
+  color: rgba(255,255,255,.9);
+}
