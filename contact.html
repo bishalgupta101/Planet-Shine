@@ -1,183 +1,163 @@
 <!doctype html>
-<html>
-  <head>
-    <title>Contact - PlanetShine Cleaning Services</title>
-    <link rel="stylesheet" href="styles.css" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+  <title>Contact Us | PlanetShine — Free Quote, Regional Australia</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact PlanetShine for a free cleaning quote across regional Australia. Call +61 451 311 905 or email info@planetshine.com.au." />
+  <link rel="canonical" href="https://planetshine.com.au/contact.html" />
+</head>
+<body>
 
-    <!-- SEO Meta Tags -->
-    <meta
-      name="description"
-      content="Planet Shine offers professional residential and commercial cleaning services across Sydney and Australia. Reliable, affordable, and eco-friendly cleaning services."
-    />
-
-    <meta
-      name="keywords"
-      content="cleaning Sydney, cleaning Australia, house cleaning Sydney, office cleaning Sydney, end of lease cleaning Australia, professional cleaners Sydney, Planet Shine cleaning"
-    />
-
-    <meta name="author" content="Planet Shine Cleaning" />
-
-    <!-- Open Graph (for Facebook/WhatsApp sharing) -->
-    <meta
-      property="og:title"
-      content="Planet Shine Cleaning - Sydney & Australia"
-    />
-    <meta
-      property="og:description"
-      content="Professional cleaning services in Sydney & Australia. Residential, commercial & end of lease cleaning."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://planetshine.com.au" />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://planetshine.com.au" />
-  </head>
-  <body>
-    <header>
-      <h1>PlanetShine Cleaning Services | Regional Australia</h1>
-      <nav>
-        <a href="index.html">Home</a> <a href="about.html">About</a>
-        <a href="services.html">Services</a> <a href="contact.html">Contact</a>
-        <a href="privacy.html">Privacy</a>
-      </nav>
-    </header>
-    <div class="container">
-     <div class="card">
-  <h2>Get In Touch</h2>
-
-  <p>
-    📧 Email:
-    <a href="mailto:info@planetshine.com.au">
-      info@planetshine.com.au
-    </a>
-  </p>
-
-  <p>
-    📞 Phone:
-    <a href="tel:+61451311905">
-      +61 451 311 905
-    </a>
-  </p>
-
-  <p>
-    📍 Service Areas:
-    Newcastle, Maitland, Singleton,
-    Muswellbrook, Aberdeen, Scone,
-    Merriwa, Murrurundi,  Tamworth, Gosford, Central Coast, Bathrust, Orange and All Regional Australia.
-  </p>
-
-  <p>
-    🕒 Hours:
-    Monday – Sunday | 7:00 AM – 7:00 PM
-  </p>
-</div>
-      <div class="card">
-  <h2>Request a Free Quote</h2>
-
-  <form id="quoteForm">
-
-
-  <p>
-    <input
-  type="text"
-  id="name"
-  name="name"
-  placeholder="Your Name"
-  style="width:100%;padding:14px;margin-bottom:15px;"
-  required
->
-  </p>
-
-  <p>
-   <input
-  type="email"
-  id="email"
-  name="email"
-  placeholder="Email Address"
-  style="width:100%;padding:14px;margin-bottom:15px;"
-  required
->
-  </p>
-
-  <p>
-  <input
-    type="tel"
-    id="phone"
-    name="phone"
-    placeholder="Phone Number"
-    style="width:100%;padding:14px;margin-bottom:15px;"
-  >
-</p>
-
-  <p>
-  <textarea
-    id="message"
-    name="message"
-    placeholder="Tell us about your cleaning requirements..."
-    style="width:100%;padding:14px;height:150px;"
-    required
-  ></textarea>
-</p>
-
-  <button
-     type="submit"
-  id="submitBtn"
-  class="btn btn-primary">
-  Request Quote
-  </button>
-
-</form>
-</div>
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span>✦</span> PlanetShine</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="about.html">About</a>
+      <a href="services.html">Services</a><a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="nav-cta">Get a free quote</a>
     </div>
-    <footer>
-  © 2026 PlanetShine Cleaning | planetshine.com.au
-</footer>
+    <button class="hamburger" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <p class="breadcrumb"><a href="index.html">Home</a><span>/</span>Contact</p>
+  <h1>Get a free quote</h1>
+  <p>Tell us about your space and we'll get back to you within 24 hours. Or call us directly — we're available 24/7 across regional Australia.</p>
+</section>
+
+<section class="sec bg-cream">
+  <div class="wrap">
+    <div class="contact-layout">
+
+      <!-- FORM -->
+      <div class="contact-form-card">
+        <h3>Request a free quote</h3>
+        <form id="quoteForm">
+          <div class="frow">
+            <div class="fgroup"><label for="name">Full name *</label><input type="text" id="name" name="name" placeholder="Your full name" required /></div>
+            <div class="fgroup"><label for="phone">Phone number *</label><input type="tel" id="phone" name="phone" placeholder="+61 4xx xxx xxx" required /></div>
+          </div>
+          <div class="fgroup"><label for="email">Email address *</label><input type="email" id="email" name="email" placeholder="you@example.com" required /></div>
+          <div class="frow">
+            <div class="fgroup">
+              <label for="serviceType">Type of cleaning *</label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="">Select a service...</option>
+                <option>Commercial cleaning</option>
+                <option>Residential cleaning</option>
+                <option>Office cleaning</option>
+                <option>End of lease cleaning</option>
+                <option>Window cleaning</option>
+                <option>Deep cleaning</option>
+                <option>Hospitality cleaning</option>
+                <option>Strata cleaning</option>
+                <option>School cleaning</option>
+                <option>Retail cleaning</option>
+                <option>Fleet cleaning</option>
+                <option>Rubbish removal</option>
+                <option>Post-construction cleaning</option>
+                <option>Garden &amp; lawn maintenance</option>
+                <option>Kitchen deep cleaning</option>
+                <option>Other / not sure</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label for="location">Your town / suburb *</label>
+              <input type="text" id="location" name="location" placeholder="e.g. Darwin, Toowoomba, Scone" required />
+            </div>
+          </div>
+          <div class="fgroup">
+            <label for="message">Tell us about your requirements</label>
+            <textarea id="message" name="message" placeholder="Describe your property, what needs cleaning, any special requirements or access details..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-green btn-full form-submit" id="submitBtn">Send quote request</button>
+          <p id="formStatus" style="display:none;margin-top:.75rem;font-size:.85rem;padding:.75rem 1rem;border-radius:var(--r-sm)"></p>
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="contact-sidebar">
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <div><h4>Call us directly</h4><p><a href="tel:+61451311905">+61 451 311 905</a><br/>Available 24/7 — weekends &amp; after-hours welcome</p></div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">✉</div>
+          <div><h4>Email us</h4><p><a href="mailto:info@planetshine.com.au">info@planetshine.com.au</a><br/>We respond within 24 hours</p></div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div><h4>Base of operations</h4><p>Scone, NSW 2337<br/>Actively serving the Hunter Region<br/>Growing across regional Australia</p></div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🗺️</div>
+          <div><h4>We cover regional Australia</h4><p>Hunter Region · Central NSW · QLD regional · NT · WA · SA · Regional VIC — and expanding</p></div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🕐</div>
+          <div><h4>Operating hours</h4><p>24/7 availability including after-hours, weekends and emergency call-outs — no extra fuss.</p></div>
+        </div>
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1883058.5!2d149.5!3d-32.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b10b44f1ad9ce89%3A0x5017d681632af30!2sScone%20NSW%202337!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="PlanetShine base — Scone, NSW">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
 <script>
   emailjs.init("M3Avzq5PAv77C8yJO");
 
-  document.getElementById("quoteForm")
-    .addEventListener("submit", function (e) {
+  document.getElementById('quoteForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const status = document.getElementById('formStatus');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
 
-      e.preventDefault();
-const button = document.getElementById("submitBtn");
-
-button.disabled = true;
-button.innerText = "Sending...";
-      
-      emailjs.send(
-  "service_g7whd6h",
-  "template_80df5sg",
-  {
-    from_name: document.getElementById("name").value,
-    from_email: document.getElementById("email").value,
-    phone: document.getElementById("phone").value,
-    message: document.getElementById("message").value,
-
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value
-  }
-)
-      .then(function () {
-        window.location.href = "thank-you.html";
-      })
-      .catch(function (error) {
-        
-        button.disabled = false;
-button.innerText = "Request Quote";
-        
-        console.error(error);
-        alert(
-          "Sorry, something went wrong. Please call us on +61 451 311 905."
-        );
-      });
-
+    emailjs.send('service_g7whd6h', 'template_80df5sg', {
+      from_name:  document.getElementById('name').value,
+      from_email: document.getElementById('email').value,
+      name:       document.getElementById('name').value,
+      email:      document.getElementById('email').value,
+      phone:      document.getElementById('phone').value,
+      message:    'Service: ' + document.getElementById('serviceType').value +
+                  '\nLocation: ' + document.getElementById('location').value +
+                  '\n\n' + document.getElementById('message').value
+    }).then(function() {
+      window.location.href = 'thank-you.html';
+    }).catch(function(err) {
+      status.textContent = 'Something went wrong. Please call us on +61 451 311 905 or email info@planetshine.com.au';
+      status.style.background = '#fef2f2';
+      status.style.color = '#991b1b';
+      status.style.display = 'block';
+      btn.textContent = 'Send quote request';
+      btn.disabled = false;
+      console.error(err);
     });
+  });
 </script>
 
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col"><div class="footer-logo"><span>✦</span> PlanetShine</div><p>Professional cleaning services across regional Australia. Locally owned, fully insured and committed to exceptional results.</p><div class="footer-contact"><a href="tel:+61451311905">📞 +61 451 311 905</a><a href="mailto:info@planetshine.com.au">✉ info@planetshine.com.au</a></div></div>
+      <div class="footer-col"><h4>Services</h4><ul><li><a href="services/commercial-cleaning.html">Commercial cleaning</a></li><li><a href="services/residential-cleaning.html">Residential cleaning</a></li><li><a href="services/end-of-lease-cleaning.html">End of lease cleaning</a></li><li><a href="services/office-cleaning.html">Office cleaning</a></li><li><a href="services/window-cleaning.html">Window cleaning</a></li><li><a href="services/deep-cleaning.html">Deep cleaning</a></li></ul></div>
+      <div class="footer-col"><h4>Coverage</h4><ul><li>Hunter Region, NSW</li><li>Central NSW</li><li>Regional Queensland</li><li>Northern Territory</li><li>Western Australia</li><li>South Australia</li><li>Regional Victoria</li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="services.html">All services</a></li><li><a href="contact.html">Get a quote</a></li><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms &amp; conditions</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 PlanetShine Cleaning Services. All rights reserved.</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></span></div>
+  </div>
+</footer>
+<script>document.querySelector('.hamburger').addEventListener('click',function(){document.querySelector('.nav-links').classList.toggle('nav-open')});</script>
+<style>@media(max-width:600px){.nav-links.nav-open{display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:var(--ink);padding:1.5rem;gap:.75rem;z-index:199;border-bottom:1px solid rgba(255,255,255,.08)}.nav-links.nav-open a:not(.nav-cta){display:block}}</style>
 </body>
 </html>
