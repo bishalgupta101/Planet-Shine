@@ -434,3 +434,7 @@ em{font-style:italic;color:var(--g500)}
   .footer-bottom{flex-direction:column;align-items:center}
 }
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
+/* ── Extended region list (11 items) ── */
+.region-list { max-height: none; }
+.region-item { padding: .55rem 1rem; }
