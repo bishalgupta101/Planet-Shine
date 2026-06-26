@@ -5,7 +5,7 @@
    Type: Playfair Display (display) + Inter (UI)
 ───────────────────────────────────────────────── */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap");
+/* ✅ Fonts loaded via <link> in HTML head — faster performance */
 
 :root {
   --g900: #06352a;
@@ -438,3 +438,20 @@ em{font-style:italic;color:var(--g500)}
 /* ── Extended region list (11 items) ── */
 .region-list { max-height: none; }
 .region-item { padding: .55rem 1rem; }
+
+
+/* ── PERFORMANCE OPTIMISATIONS ── */
+/* Prevent layout shift on images */
+img { height: auto; }
+.s-card-img { aspect-ratio: 16/9; width: 100%; height: 180px; object-fit: cover; }
+.feature-img img { aspect-ratio: 4/3; }
+.sd-img img { aspect-ratio: 4/3; }
+
+/* GPU-accelerate transforms */
+.s-card, .val-card, .proc-step { will-change: transform; }
+
+/* Reduce paint on hover */
+.s-card:hover { transform: translateY(-4px); }
+
+/* Font display swap — prevents invisible text during load */
+@font-face { font-display: swap; }
