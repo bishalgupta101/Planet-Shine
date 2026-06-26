@@ -3,9 +3,17 @@
 <head>
   <title>PlanetShine | Professional Cleaning Services Across Australia</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✅ FIX 1: Fonts via non-blocking preconnect instead of slow @import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" /></noscript>
+  <!-- ✅ FIX 2: Preload hero image — loads before anything else -->
+  <link rel="preload" as="image" href="images/hero-regional.png" />
   <link rel="stylesheet" href="styles.css" />
-  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="PlanetShine delivers premium residential and commercial cleaning services across all of Australia — NSW, VIC, QLD, Perth (WS), Adelaide (SA), Darwin (NT), Hobart (TAS) and every regional community in between. Fully insured, 24/7 available. Free quote." />
+  <meta name="description" content="PlanetShine delivers premium residential and commercial cleaning services across all of Australia — Sydney, Melbourne, Brisbane, Perth, Adelaide, Darwin, Hobart and every regional community in between. Fully insured, 24/7 available. Free quote." />
   <meta name="keywords" content="cleaning services Australia, commercial cleaning Sydney, residential cleaning Melbourne, office cleaning Brisbane, cleaning services Perth, end of lease cleaning NSW, cleaning Hunter Region, commercial cleaning Queensland, professional cleaning Adelaide, cleaning services Darwin, cleaning services Hobart, cleaning services ACT, PlanetShine cleaning" />
   <meta property="og:title" content="PlanetShine | Premium Cleaning Services Across Australia" />
   <meta property="og:description" content="Premium residential and commercial cleaning delivered to the highest standard — anywhere in Australia. Fully insured, 24/7 available, free site inspection." />
@@ -13,8 +21,6 @@
   <meta property="og:url" content="https://planetshine.com.au" />
   <meta property="og:image" content="https://planetshine.com.au/images/hero-regional.png" />
   <link rel="canonical" href="https://planetshine.com.au" />
-
-  <!-- Schema.org structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,7 +48,8 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="images/logo-icon-only.svg" alt="PlanetShine" style="height:34px;vertical-align:middle;margin-right:10px;display:inline-block"> PlanetShine
+      <!-- ✅ FIX 3: Explicit width/height on logo prevents layout shift -->
+      <img src="images/logo-icon-only.svg" alt="PlanetShine" width="34" height="34" style="height:34px;vertical-align:middle;margin-right:10px;display:inline-block"> PlanetShine
     </a>
     <div class="nav-links">
       <a href="index.html" class="active">Home</a>
@@ -55,7 +62,6 @@
   </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
   <div class="wrap hero-content">
     <div class="hero-tag">
@@ -80,96 +86,48 @@
   </div>
 </section>
 
-<!-- USP STRIP -->
 <section class="usp-strip">
   <div class="wrap">
     <span class="eyebrow eyebrow--light tc">The PlanetShine difference</span>
     <h2 class="tc" style="color:var(--white)">Why clients across Australia choose PlanetShine</h2>
     <div class="usp-grid">
-      <div class="usp-item">
-        <div class="usp-icon">🏆</div>
-        <strong>Uncompromising quality</strong>
-        <p>Premium cleaning standards on every job — residential or commercial, metro or regional.</p>
-      </div>
-      <div class="usp-item">
-        <div class="usp-icon">🗺️</div>
-        <strong>Nationwide coverage</strong>
-        <p>Actively servicing NSW, ACT, QLD, WA, SA, NT, VIC and TAS — and growing fast.</p>
-      </div>
-      <div class="usp-item">
-        <div class="usp-icon">🕐</div>
-        <strong>Available 24/7</strong>
-        <p>After-hours, weekends and emergency call-outs always available — no extra fuss.</p>
-      </div>
-      <div class="usp-item">
-        <div class="usp-icon">🛡️</div>
-        <strong>Fully insured</strong>
-        <p>Comprehensive public liability insurance on every single job we undertake.</p>
-      </div>
-      <div class="usp-item">
-        <div class="usp-icon">📋</div>
-        <strong>Free site inspection</strong>
-        <p>No obligation quotes with tailored cleaning plans — priced to your requirements.</p>
-      </div>
+      <div class="usp-item"><div class="usp-icon">🏆</div><strong>Uncompromising quality</strong><p>Premium cleaning standards on every job — residential or commercial, metro or regional.</p></div>
+      <div class="usp-item"><div class="usp-icon">🗺️</div><strong>Nationwide coverage</strong><p>Actively servicing NSW, ACT, QLD, WA, SA, NT, VIC and TAS — and growing fast.</p></div>
+      <div class="usp-item"><div class="usp-icon">🕐</div><strong>Available 24/7</strong><p>After-hours, weekends and emergency call-outs always available — no extra fuss.</p></div>
+      <div class="usp-item"><div class="usp-icon">🛡️</div><strong>Fully insured</strong><p>Comprehensive public liability insurance on every single job we undertake.</p></div>
+      <div class="usp-item"><div class="usp-icon">📋</div><strong>Free site inspection</strong><p>No obligation quotes with tailored cleaning plans — priced to your requirements.</p></div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
 <section class="sec bg-cream">
   <div class="wrap">
     <span class="eyebrow tc">What we offer</span>
     <h2 class="tc">Cleaning solutions for every space</h2>
     <p class="section-sub">From regular residential cleans to large commercial contracts — 16 professional services delivered to the highest standard, anywhere in Australia.</p>
     <div class="s-grid">
-      <a href="services/commercial-cleaning.html" class="s-card">
-        <div class="s-card-img"><img src="images/commercial-cleaning.png" alt="Commercial Cleaning Australia" /></div>
-        <div class="s-card-body"><h3>Commercial cleaning</h3><p>Offices, warehouses, retail and workplaces — nationwide.</p></div>
-      </a>
-      <a href="services/residential-cleaning.html" class="s-card">
-        <div class="s-card-img"><img src="images/residential-cleaning.png" alt="Residential Cleaning Australia" /></div>
-        <div class="s-card-body"><h3>Residential cleaning</h3><p>Premium home cleaning around your lifestyle and schedule.</p></div>
-      </a>
-      <a href="services/office-cleaning.html" class="s-card">
-        <div class="s-card-img"><img src="images/office-cleaning.png" alt="Office Cleaning Australia" /></div>
-        <div class="s-card-body"><h3>Office cleaning</h3><p>Consistent programs for productive, hygienic workspaces.</p></div>
-      </a>
-      <a href="services/end-of-lease-cleaning.html" class="s-card">
-        <div class="s-card-img"><img src="images/end-of-lease-cleaning.png" alt="End of Lease Cleaning Australia" /></div>
-        <div class="s-card-body"><h3>End of lease cleaning</h3><p>Bond cleans that help tenants leave spotless and recover their full bond.</p></div>
-      </a>
-      <a href="services/window-cleaning.html" class="s-card">
-        <div class="s-card-img"><img src="images/window-cleaning.png" alt="Window Cleaning Australia" /></div>
-        <div class="s-card-body"><h3>Window cleaning</h3><p>Streak-free results for homes and commercial buildings.</p></div>
-      </a>
-      <a href="services/deep-cleaning.html" class="s-card">
-        <div class="s-card-img"><img src="images/deep-cleaning.png" alt="Deep Cleaning Australia" /></div>
-        <div class="s-card-body"><h3>Deep cleaning</h3><p>Top-to-bottom intensive cleans for every corner of your space.</p></div>
-      </a>
-      <a href="services/hospitality-cleaning.html" class="s-card">
-        <div class="s-card-img"><img src="images/hospitality-cleaning.png" alt="Hospitality Cleaning Australia" /></div>
-        <div class="s-card-body"><h3>Hospitality cleaning</h3><p>Specialist cleaning for pubs, clubs, hotels and restaurants.</p></div>
-      </a>
-      <a href="services/fleet-cleaning.html" class="s-card">
-        <div class="s-card-img"><img src="images/fleet-cleaning.png" alt="Fleet Cleaning Australia" /></div>
-        <div class="s-card-body"><h3>Fleet cleaning</h3><p>Mobile on-site vehicle cleaning for commercial fleets.</p></div>
-      </a>
+      <!-- ✅ FIX 4: loading="lazy" + width/height on all service images -->
+      <a href="services/commercial-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/commercial-cleaning.png" alt="Commercial Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Commercial cleaning</h3><p>Offices, warehouses, retail and workplaces — nationwide.</p></div></a>
+      <a href="services/residential-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/residential-cleaning.png" alt="Residential Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Residential cleaning</h3><p>Premium home cleaning around your lifestyle and schedule.</p></div></a>
+      <a href="services/office-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/office-cleaning.png" alt="Office Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Office cleaning</h3><p>Consistent programs for productive, hygienic workspaces.</p></div></a>
+      <a href="services/end-of-lease-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/end-of-lease-cleaning.png" alt="End of Lease Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>End of lease cleaning</h3><p>Bond cleans that help tenants leave spotless and recover their full bond.</p></div></a>
+      <a href="services/window-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/window-cleaning.png" alt="Window Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Window cleaning</h3><p>Streak-free results for homes and commercial buildings.</p></div></a>
+      <a href="services/deep-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/deep-cleaning.png" alt="Deep Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Deep cleaning</h3><p>Top-to-bottom intensive cleans for every corner of your space.</p></div></a>
+      <a href="services/hospitality-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/hospitality-cleaning.png" alt="Hospitality Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Hospitality cleaning</h3><p>Specialist cleaning for pubs, clubs, hotels and restaurants.</p></div></a>
+      <a href="services/fleet-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/fleet-cleaning.png" alt="Fleet Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Fleet cleaning</h3><p>Mobile on-site vehicle cleaning for commercial fleets.</p></div></a>
     </div>
-    <div class="tc" style="margin-top:2.5rem">
-      <a href="services.html" class="btn btn-outline-green">View all 16 services</a>
-    </div>
+    <div class="tc" style="margin-top:2.5rem"><a href="services.html" class="btn btn-outline-green">View all 16 services</a></div>
   </div>
 </section>
 
-<!-- ABOUT SNIPPET -->
 <section class="sec bg-white">
   <div class="wrap">
     <div class="feature-row">
       <div class="feature-text">
         <span class="eyebrow">Who we are</span>
-        <h2>Quality cleaning — from Metro to the outback</h2>
+        <h2>Quality cleaning — from Sydney to the outback</h2>
         <p>PlanetShine was built on a simple belief: every Australian property deserves a genuinely premium cleaning service, regardless of where it is. We started in regional NSW and have grown into a national provider — without ever compromising on the quality and personal attention that defined us from day one.</p>
-        <p>We are currently active across Metro, the Hunter Region, New England and Northern Tablelands, Central West NSW and expanding rapidly into every state and territory. Wherever you are in Australia, PlanetShine is here to deliver.</p>
+        <p>We are currently active across Sydney Metro, the Hunter Region, New England and Northern Tablelands, Central West NSW and expanding rapidly into every state and territory. Wherever you are in Australia, PlanetShine is here to deliver.</p>
         <div class="feature-badges">
           <div class="fbadge"><div class="fbadge-icon">🛡️</div><strong>Fully insured</strong><p>Public liability on every job</p></div>
           <div class="fbadge"><div class="fbadge-icon">🌿</div><strong>Eco-friendly</strong><p>Safe for people &amp; planet</p></div>
@@ -179,13 +137,12 @@
         <div style="margin-top:1.75rem"><a href="about.html" class="btn btn-outline-green">Learn more about us</a></div>
       </div>
       <div class="feature-img">
-        <img src="images/hero-regional.png" alt="PlanetShine serving Australia" />
+        <img src="images/hero-regional.png" alt="PlanetShine serving Australia" width="600" height="420" loading="lazy" />
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS -->
 <section class="sec bg-cream">
   <div class="wrap">
     <span class="eyebrow tc">How it works</span>
@@ -200,7 +157,6 @@
   </div>
 </section>
 
-<!-- COVERAGE -->
 <section class="sec bg-white">
   <div class="wrap">
     <span class="eyebrow tc">Where we operate</span>
@@ -210,7 +166,7 @@
       <div class="coverage-text">
         <span class="eyebrow eyebrow--light">Active &amp; expanding</span>
         <h2 style="color:var(--white)">Currently active. Rapidly growing.</h2>
-        <p>PlanetShine is actively operating across Metro and regional NSW, with our network expanding into every Australian state and territory. The same premium quality — wherever your property is.</p>
+        <p>PlanetShine is actively operating across Sydney and regional NSW, with our network expanding into every Australian state and territory. The same premium quality — wherever your property is.</p>
         <div class="region-list">
           <div class="region-item"><span class="region-dot"></span><span>Sydney Metro &amp; Greater Sydney</span><span class="region-tag">Active now</span></div>
           <div class="region-item"><span class="region-dot"></span><span>Hunter Region — Newcastle, Maitland, Singleton, Muswellbrook, Scone</span><span class="region-tag">Active now</span></div>
@@ -224,22 +180,15 @@
           <div class="region-item"><span class="region-dot"></span><span>Northern Territory — Darwin &amp; regional NT</span></div>
           <div class="region-item"><span class="region-dot"></span><span>Tasmania — Hobart, Launceston &amp; regional TAS</span></div>
         </div>
-        <div style="margin-top:1.75rem">
-          <a href="contact.html" class="btn btn-white">Check your area</a>
-        </div>
+        <div style="margin-top:1.75rem"><a href="contact.html" class="btn btn-white">Check your area</a></div>
       </div>
       <div class="map-embed">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15000000!2d133.7751!3d-25.2744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
-          style="border:0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" title="PlanetShine — Serving all of Australia">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15000000!2d133.7751!3d-25.2744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="PlanetShine — Serving all of Australia"></iframe>
       </div>
     </div>
   </div>
 </section>
 
-<!-- STATS -->
 <section class="sec-sm bg-cream">
   <div class="wrap">
     <div class="stats-band">
@@ -251,7 +200,6 @@
   </div>
 </section>
 
-<!-- CTA -->
 <section class="sec bg-white">
   <div class="wrap">
     <div class="cta-block">
@@ -275,7 +223,7 @@
         <div class="footer-contact">
           <a href="tel:+61451311905">📞 +61 451 311 905</a>
           <a href="mailto:info@planetshine.com.au">✉ info@planetshine.com.au</a>
-          <span style="color:rgba(255,255,255,0.3);font-size:.8rem">📍 Based in NSW — Serving All of Australia</span>
+          <span style="color:rgba(255,255,255,0.3);font-size:.8rem">📍 Based in Hunter Region NSW — Serving All Over Australia</span>
         </div>
       </div>
       <div class="footer-col"><h4>Services</h4><ul>
