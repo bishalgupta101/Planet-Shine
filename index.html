@@ -5,12 +5,10 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- ✅ FIX 1: Fonts via non-blocking preconnect instead of slow @import -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" media="print" onload="this.media='all'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" /></noscript>
-  <!-- ✅ FIX 2: Preload hero image — loads before anything else -->
   <link rel="preload" as="image" href="images/hero-regional.png" />
   <link rel="stylesheet" href="styles.css" />
   <meta name="description" content="PlanetShine cleaning services — premium residential and commercial cleaning across regional and metropolitan Australia. Fully insured, 24/7. Free quote." />
@@ -98,7 +96,6 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <!-- ✅ FIX 3: Explicit width/height on logo prevents layout shift -->
       <img src="images/logo-icon-only.svg" alt="PlanetShine" width="34" height="34" style="height:34px;vertical-align:middle;margin-right:10px;display:inline-block"> PlanetShine
     </a>
     <div class="nav-links">
@@ -157,7 +154,6 @@
     <h2 class="tc">Cleaning solutions for every space</h2>
     <p class="section-sub">From regular residential cleans to large commercial contracts — 16 professional services delivered to the highest standard, anywhere in Australia.</p>
     <div class="s-grid">
-      <!-- ✅ FIX 4: loading="lazy" + width/height on all service images -->
       <a href="services/commercial-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/commercial-cleaning.png" alt="Commercial Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Commercial cleaning</h3><p>Offices, warehouses, retail and workplaces — nationwide.</p></div></a>
       <a href="services/residential-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/residential-cleaning.png" alt="Residential Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Residential cleaning</h3><p>Premium home cleaning around your lifestyle and schedule.</p></div></a>
       <a href="services/office-cleaning.html" class="s-card"><div class="s-card-img"><img src="images/office-cleaning.png" alt="Office Cleaning Australia" width="400" height="180" loading="lazy" /></div><div class="s-card-body"><h3>Office cleaning</h3><p>Consistent programs for productive, hygienic workspaces.</p></div></a>
@@ -256,25 +252,22 @@
     <span class="eyebrow tc">Why PlanetShine</span>
     <h2 class="tc">Professional cleaning services across regional and metropolitan Australia</h2>
     <p class="section-sub">Trusted by homes and businesses across Australia.</p>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:2rem">
+    <div class="why-grid">
       <div>
         <h3 style="font-size:1.1rem;margin-bottom:.75rem;color:var(--ink)">Commercial cleaning services</h3>
-        <p>PlanetShine provides professional commercial cleaning for offices, warehouses, retail stores, hospitality venues, schools, medical centres and strata properties across Australia. Our commercial cleaning programs are fully customisable — from daily maintenance cleans to comprehensive monthly deep cleans — and are always scheduled to minimise disruption to your business operations.</p>
-        <p style="margin-top:1rem">We serve businesses of all sizes across Sydney Metro, the Hunter Region, New England and Northern Tablelands, Central West NSW and expanding nationally. Every commercial clean is delivered by trained, insured professionals who understand the standards your clients and staff expect.</p>
+        <p>PlanetShine delivers professional commercial cleaning for offices, warehouses, retail stores, schools and strata properties across Australia. Programs are fully customisable — from daily maintenance to monthly deep cleans — carried out by trained, insured professionals who keep disruption to your business to a minimum.</p>
       </div>
       <div>
         <h3 style="font-size:1.1rem;margin-bottom:.75rem;color:var(--ink)">Residential cleaning services</h3>
-        <p>Our residential cleaning services are designed around your life — not the other way around. Whether you need a weekly home clean, a fortnightly visit or a one-off deep clean before a special occasion, PlanetShine delivers a consistently premium result in every room of your home.</p>
-        <p style="margin-top:1rem">We currently service residential properties across the Hunter Region including Newcastle, Maitland, Singleton, Muswellbrook and Scone, as well as Sydney Metro and surrounding NSW regions. Our network is expanding to serve residential clients in Queensland, Victoria, Western Australia, South Australia, the Northern Territory, Tasmania and the ACT.</p>
+        <p>Our residential cleaning is built around your life — weekly, fortnightly or one-off deep cleans, delivered to a consistently premium standard in every room. We currently service the Hunter Region and Sydney Metro, and are expanding into QLD, VIC, WA, SA, NT, TAS and the ACT.</p>
       </div>
       <div>
         <h3 style="font-size:1.1rem;margin-bottom:.75rem;color:var(--ink)">End of lease and bond cleaning</h3>
-        <p>Moving out of a rental property is stressful enough without worrying about the clean. PlanetShine's end of lease cleaning service follows a comprehensive checklist that meets the standards required by property managers and landlords across Australia — giving you the best possible chance of recovering your full bond. We cover everything from kitchen appliances and bathroom grout to skirting boards, window tracks and wall marks.</p>
+        <p>Moving out is stressful enough without worrying about the clean. Our end of lease service follows a comprehensive checklist that meets property manager and landlord standards across Australia — covering everything from kitchen appliances to window tracks — to give you the best chance of recovering your full bond.</p>
       </div>
       <div>
         <h3 style="font-size:1.1rem;margin-bottom:.75rem;color:var(--ink)">Why regional and metro Australia trusts PlanetShine</h3>
-        <p>PlanetShine was built on the belief that every Australian property — whether in a CBD high-rise or a regional farming community — deserves the same exceptional standard of cleaning. We are fully insured with comprehensive public liability coverage, available 24 hours a day seven days a week including after-hours and emergency call-outs, and we provide free no-obligation site inspections for all new clients.</p>
-        <p style="margin-top:1rem">Our team uses eco-friendly, non-toxic cleaning products that are safe for families, staff and the environment. We respond to all enquiries within 24 hours and provide transparent, itemised quotes with no hidden fees.</p>
+        <p>Every Australian property deserves the same premium standard, whether in a CBD high-rise or a regional town. We're fully insured, available 24/7 including emergencies, and offer free no-obligation site inspections. Our eco-friendly products are safe for families and staff, and we respond to all enquiries within 24 hours with transparent, itemised quotes.</p>
       </div>
     </div>
   </div>
@@ -362,6 +355,9 @@
   .nav-links.nav-open{display:flex;flex-direction:column;position:fixed;top:68px;left:0;right:0;background:var(--ink);padding:1.5rem;gap:.75rem;z-index:199;border-bottom:1px solid rgba(255,255,255,.08)}
   .nav-links.nav-open a:not(.nav-cta){display:block}
 }
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:2rem}
+.why-grid p{text-align:justify}
+@media(max-width:768px){.why-grid{grid-template-columns:1fr;gap:2rem}}
 </style>
 </body>
 </html>
