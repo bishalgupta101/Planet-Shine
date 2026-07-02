@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>PlanetShine | Professional Cleaning Services Across Australia</title>
+  <title>PlanetShine | Professional Cleaning Services — Regional &amp; Metro Australia</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
   <!-- ✅ FIX 2: Preload hero image — loads before anything else -->
   <link rel="preload" as="image" href="images/hero-regional.png" />
   <link rel="stylesheet" href="styles.css" />
-  <meta name="description" content="PlanetShine delivers premium residential and commercial cleaning across all of Australia. Fully insured, available 24/7. Free quote today." />
+  <meta name="description" content="PlanetShine cleaning services — premium residential and commercial cleaning across regional and metropolitan Australia. Fully insured, 24/7. Free quote." />
   <meta name="keywords" content="cleaning services Australia, commercial cleaning Sydney, residential cleaning Melbourne, office cleaning Brisbane, cleaning services Perth, end of lease cleaning NSW, cleaning Hunter Region, commercial cleaning Queensland, professional cleaning Adelaide, cleaning services Darwin, cleaning services Hobart, cleaning services ACT, PlanetShine cleaning" />
   <meta property="og:title" content="PlanetShine | Premium Cleaning Services Across Australia" />
   <meta property="og:description" content="Premium residential and commercial cleaning delivered to the highest standard — anywhere in Australia. Fully insured, 24/7 available, free site inspection." />
@@ -21,30 +21,80 @@
   <meta property="og:url" content="https://planetshine.com.au" />
   <meta property="og:image" content="https://planetshine.com.au/images/hero-regional.png" />
   <link rel="canonical" href="https://planetshine.com.au" />
+  <meta name="theme-color" content="#06352a" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "CleaningService",
-    "name": "PlanetShine Cleaning Services",
-    "url": "https://planetshine.com.au",
-    "telephone": "+61451311905",
-    "email": "info@planetshine.com.au",
-    "description": "Premium residential and commercial cleaning services across all of Australia.",
-    "areaServed": "Australia",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Scone",
-      "addressRegion": "NSW",
-      "postalCode": "2337",
-      "addressCountry": "AU"
-    },
-    "openingHours": "Mo-Su 00:00-23:59",
-    "priceRange": "$$"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://planetshine.com.au/#organization",
+        "name": "PlanetShine Cleaning Services",
+        "url": "https://planetshine.com.au",
+        "logo": "https://planetshine.com.au/images/logo-icon-only.svg",
+        "telephone": "+61451311905",
+        "email": "info@planetshine.com.au",
+        "description": "PlanetShine delivers premium residential and commercial cleaning services across all of Australia — from Sydney Metro and the Hunter Region to Darwin, Perth and beyond.",
+        "foundingDate": "2019",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mount Street",
+          "addressLocality": "Scone",
+          "addressRegion": "NSW",
+          "postalCode": "2337",
+          "addressCountry": "AU"
+        },
+        "areaServed": [
+          "Sydney", "Hunter Region", "Newcastle", "Maitland", "Singleton",
+          "Muswellbrook", "Scone", "Tamworth", "Armidale", "Bathurst",
+          "Orange", "Dubbo", "Queensland", "Victoria", "Western Australia",
+          "South Australia", "Northern Territory", "Tasmania", "ACT"
+        ],
+        "sameAs": [
+          "https://www.facebook.com/PlanetShineCleaningServices"
+        ]
+      },
+      {
+        "@type": "CleaningService",
+        "@id": "https://planetshine.com.au/#service",
+        "name": "PlanetShine Cleaning Services",
+        "url": "https://planetshine.com.au",
+        "provider": {"@id": "https://planetshine.com.au/#organization"},
+        "telephone": "+61451311905",
+        "email": "info@planetshine.com.au",
+        "description": "Premium residential and commercial cleaning services across all of Australia. Fully insured, available 24/7, free site inspection.",
+        "areaServed": "Australia",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Scone",
+          "addressRegion": "NSW",
+          "postalCode": "2337",
+          "addressCountry": "AU"
+        },
+        "openingHours": "Mo-Su 00:00-23:59",
+        "priceRange": "$$",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Cleaning Services",
+          "itemListElement": [
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Cleaning"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Residential Cleaning"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Office Cleaning"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "End of Lease Cleaning"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Window Cleaning"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Deep Cleaning"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Hospitality Cleaning"}},
+            {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fleet Cleaning"}}
+          ]
+        }
+      }
+    ]
   }
   </script>
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
@@ -62,6 +112,7 @@
   </div>
 </header>
 
+<main id="main-content">
 <section class="hero">
   <div class="wrap hero-content">
     <div class="hero-tag">
@@ -137,7 +188,10 @@
         <div style="margin-top:1.75rem"><a href="about.html" class="btn btn-outline-green">Learn more about us</a></div>
       </div>
       <div class="feature-img">
-        <img src="images/hero-regional.png" alt="PlanetShine serving Australia" width="600" height="420" loading="lazy" />
+        <picture>
+          <source srcset="images/hero-regional.webp" type="image/webp">
+          <img src="images/hero-regional.png" alt="PlanetShine serving Australia" width="600" height="420" loading="lazy" />
+        </picture>
       </div>
     </div>
   </div>
@@ -200,6 +254,35 @@
   </div>
 </section>
 
+<section class="sec bg-cream">
+  <div class="wrap">
+    <span class="eyebrow tc">Why PlanetShine</span>
+    <h2 class="tc">Professional cleaning services across regional and metropolitan Australia</h2>
+    <p class="section-sub">Trusted by homes and businesses across NSW, QLD, VIC, WA, SA, NT, ACT and TAS.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:2rem">
+      <div>
+        <h3 style="font-size:1.1rem;margin-bottom:.75rem;color:var(--ink)">Commercial cleaning services</h3>
+        <p>PlanetShine provides professional commercial cleaning for offices, warehouses, retail stores, hospitality venues, schools, medical centres and strata properties across Australia. Our commercial cleaning programs are fully customisable — from daily maintenance cleans to comprehensive monthly deep cleans — and are always scheduled to minimise disruption to your business operations.</p>
+        <p style="margin-top:1rem">We serve businesses of all sizes across Sydney Metro, the Hunter Region, New England and Northern Tablelands, Central West NSW and expanding nationally. Every commercial clean is delivered by trained, insured professionals who understand the standards your clients and staff expect.</p>
+      </div>
+      <div>
+        <h3 style="font-size:1.1rem;margin-bottom:.75rem;color:var(--ink)">Residential cleaning services</h3>
+        <p>Our residential cleaning services are designed around your life — not the other way around. Whether you need a weekly home clean, a fortnightly visit or a one-off deep clean before a special occasion, PlanetShine delivers a consistently premium result in every room of your home.</p>
+        <p style="margin-top:1rem">We currently service residential properties across the Hunter Region including Newcastle, Maitland, Singleton, Muswellbrook and Scone, as well as Sydney Metro and surrounding NSW regions. Our network is expanding to serve residential clients in Queensland, Victoria, Western Australia, South Australia, the Northern Territory, Tasmania and the ACT.</p>
+      </div>
+      <div>
+        <h3 style="font-size:1.1rem;margin-bottom:.75rem;color:var(--ink)">End of lease and bond cleaning</h3>
+        <p>Moving out of a rental property is stressful enough without worrying about the clean. PlanetShine's end of lease cleaning service follows a comprehensive checklist that meets the standards required by property managers and landlords across Australia — giving you the best possible chance of recovering your full bond. We cover everything from kitchen appliances and bathroom grout to skirting boards, window tracks and wall marks.</p>
+      </div>
+      <div>
+        <h3 style="font-size:1.1rem;margin-bottom:.75rem;color:var(--ink)">Why regional and metro Australia trusts PlanetShine</h3>
+        <p>PlanetShine was built on the belief that every Australian property — whether in a CBD high-rise or a regional farming community — deserves the same exceptional standard of cleaning. We are fully insured with comprehensive public liability coverage, available 24 hours a day seven days a week including after-hours and emergency call-outs, and we provide free no-obligation site inspections for all new clients.</p>
+        <p style="margin-top:1rem">Our team uses eco-friendly, non-toxic cleaning products that are safe for families, staff and the environment. We respond to all enquiries within 24 hours and provide transparent, itemised quotes with no hidden fees.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="sec bg-white">
   <div class="wrap">
     <div class="cta-block">
@@ -214,6 +297,7 @@
   </div>
 </section>
 
+</main>
 <footer class="footer">
   <div class="wrap">
     <div class="footer-grid">
