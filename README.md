@@ -1,4 +1,4 @@
-# PlanetShine Cleaning Services
+# PlanetShine Cleaning & Property Services
 
 Professional residential and commercial cleaning services across Newcastle and the Hunter Region, NSW.
 
