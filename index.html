@@ -69,7 +69,20 @@
           "postalCode": "2337",
           "addressCountry": "AU"
         },
-        "openingHours": "Mo-Su 00:00-23:59",
+        "openingHoursSpecification": [
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "07:30",
+    "closes": "18:00"
+  },
+  {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Saturday", "Sunday"],
+    "opens": "09:00",
+    "closes": "16:00"
+  }
+],
         "priceRange": "$$",
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -125,7 +138,7 @@
     <div class="hero-stats">
       <div class="hstat"><span class="hstat-n">5+</span><span class="hstat-l">Years experience</span></div>
       <div class="hdivider"></div>
-      <div class="hstat"><span class="hstat-n">24/7</span><span class="hstat-l">Availability</span></div>
+      <div class="hstat"><span class="hstat-n">24/7</span><span class="hstat-l">Emergency support</span></div>
       <div class="hdivider"></div>
       <div class="hstat"><span class="hstat-n">100%</span><span class="hstat-l">Insured</span></div>
       <div class="hdivider"></div>
@@ -141,7 +154,7 @@
     <div class="usp-grid">
       <div class="usp-item"><div class="usp-icon">🏆</div><strong>Uncompromising quality</strong><p>Premium cleaning standards on every job — residential or commercial, metro or regional.</p></div>
       <div class="usp-item"><div class="usp-icon">🗺️</div><strong>Nationwide coverage</strong><p>Actively servicing NSW, ACT, QLD, WA, SA, NT, VIC and TAS — and growing fast.</p></div>
-      <div class="usp-item"><div class="usp-icon">🕐</div><strong>Available 24/7</strong><p>After-hours, weekends and emergency call-outs always available — no extra fuss.</p></div>
+      <div class="usp-item"><div class="usp-icon">🕐</div><strong>24/7 emergency support</strong><p>Standard hours 7:30am–6pm weekdays, 9am–4pm weekends — plus after-hours and emergency call-outs when you need them.</p></div>
       <div class="usp-item"><div class="usp-icon">🛡️</div><strong>Fully insured</strong><p>Comprehensive public liability insurance on every single job we undertake.</p></div>
       <div class="usp-item"><div class="usp-icon">📋</div><strong>Free site inspection</strong><p>No obligation quotes with tailored cleaning plans — priced to your requirements.</p></div>
     </div>
