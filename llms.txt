@@ -1,6 +1,6 @@
 # PlanetShine Cleaning & Property Services
 
-> PlanetShine is an Australian-owned professional cleaning & Property Services company delivering premium residential and commercial cleaning services across all of Australia — from Sydney Metro and the Hunter Region to Darwin, Perth and beyond. Fully insured, available 24/7, free site inspection.
+> PlanetShine Cleaning & Property Services is an Australian-owned professional cleaning company delivering premium residential and commercial cleaning services across all of Australia — from Sydney Metro and the Hunter Region to Darwin, Perth and beyond. Fully insured, available 24/7, free site inspection.
 
 ## About PlanetShine
 
@@ -33,15 +33,15 @@ Expanding to: ACT (Canberra), Queensland (Brisbane, Gold Coast, Toowoomba, Cairn
 
 ## Contact
 
-- Phone: +61 451 311 905
-- Email: info@planetshine.com.au
-- Website: https://planetshine.com.au
+- Phone: [+61 451 311 905](tel:+61451311905)
+- Email: [info@planetshine.com.au](mailto:info@planetshine.com.au)
+- Website: [https://planetshine.com.au](https://planetshine.com.au)
 - Location: Scone, NSW 2337, Australia
-- Hours: Open 24 hours, 7 days a week
+- Hours: Tue–Fri & Mon 7:30am–6pm, Sat–Sun 9am–4pm. 24/7 emergency call-outs available
 
 ## Key Facts
 
-- Founded: 2019
+- Established: 2026 (5+ years industry experience)
 - Fully insured with public liability coverage
 - Eco-friendly, non-toxic cleaning products
 - Free no-obligation site inspections
@@ -50,13 +50,13 @@ Expanding to: ACT (Canberra), Queensland (Brisbane, Gold Coast, Toowoomba, Cairn
 
 ## Pages
 
-- Home: https://planetshine.com.au
-- About: https://planetshine.com.au/about.html
-- Services: https://planetshine.com.au/services.html
-- Contact: https://planetshine.com.au/contact.html
-- Commercial Cleaning: https://planetshine.com.au/services/commercial-cleaning.html
-- Residential Cleaning: https://planetshine.com.au/services/residential-cleaning.html
-- End of Lease Cleaning: https://planetshine.com.au/services/end-of-lease-cleaning.html
-- Office Cleaning: https://planetshine.com.au/services/office-cleaning.html
-- Window Cleaning: https://planetshine.com.au/services/window-cleaning.html
-- Deep Cleaning: https://planetshine.com.au/services/deep-cleaning.html
+- [Home](https://planetshine.com.au): Main landing page
+- [About](https://planetshine.com.au/about.html): Company overview and background
+- [Services](https://planetshine.com.au/services.html): Full list of cleaning services offered
+- [Contact](https://planetshine.com.au/contact.html): Get a free quote or site inspection
+- [Commercial Cleaning](https://planetshine.com.au/services/commercial-cleaning.html): Offices, warehouses, retail and workplaces
+- [Residential Cleaning](https://planetshine.com.au/services/residential-cleaning.html): Home cleaning services
+- [End of Lease Cleaning](https://planetshine.com.au/services/end-of-lease-cleaning.html): Bond cleans and handover-ready properties
+- [Office Cleaning](https://planetshine.com.au/services/office-cleaning.html): Scheduled workplace cleaning programs
+- [Window Cleaning](https://planetshine.com.au/services/window-cleaning.html): Residential and commercial window cleaning
+- [Deep Cleaning](https://planetshine.com.au/services/deep-cleaning.html): Intensive top-to-bottom cleans
