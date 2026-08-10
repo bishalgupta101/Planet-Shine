@@ -1,6 +1,6 @@
 # PlanetShine Cleaning & Property Services
 
-> PlanetShine Cleaning & Property Services is an Australian-owned professional cleaning company delivering premium residential and commercial cleaning services across all of Australia — from Sydney Metro and the Hunter Region to Darwin, Perth and beyond. Fully insured, available 24/7, free site inspection.
+> PlanetShine Cleaning & Property Services is an Australian-owned professional cleaning company delivering premium residential and commercial cleaning services across all of Australia — from Sydney Metro and the Hunter Region to Darwin, Perth and beyond. Fully insured, 24/7 emergency support, free site inspection.
 
 ## About PlanetShine
 
@@ -9,7 +9,7 @@ PlanetShine Cleaning & Property Services is based in Scone, NSW and actively ser
 ## Services
 
 - Commercial Cleaning — offices, warehouses, retail, workplaces
-- Residential Cleaning — homes, apartments, regular cleans
+- Residential & Airbnb Cleaning — homes, apartments, regular cleans, short-term rental turnover cleans
 - Office Cleaning — scheduled workplace cleaning programs
 - End of Lease Cleaning — bond cleans, handover-ready properties
 - Window Cleaning — residential and commercial
@@ -55,7 +55,7 @@ Expanding to: ACT (Canberra), Queensland (Brisbane, Gold Coast, Toowoomba, Cairn
 - [Services](https://planetshine.com.au/services.html): Full list of cleaning services offered
 - [Contact](https://planetshine.com.au/contact.html): Get a free quote or site inspection
 - [Commercial Cleaning](https://planetshine.com.au/services/commercial-cleaning.html): Offices, warehouses, retail and workplaces
-- [Residential Cleaning](https://planetshine.com.au/services/residential-cleaning.html): Home cleaning services
+- [Residential & Airbnb Cleaning](https://planetshine.com.au/services/residential-cleaning.html): Home cleaning and Airbnb/short-term rental turnover cleaning
 - [End of Lease Cleaning](https://planetshine.com.au/services/end-of-lease-cleaning.html): Bond cleans and handover-ready properties
 - [Office Cleaning](https://planetshine.com.au/services/office-cleaning.html): Scheduled workplace cleaning programs
 - [Window Cleaning](https://planetshine.com.au/services/window-cleaning.html): Residential and commercial window cleaning
